@@ -1,4 +1,6 @@
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background: #fff;
 }
 
@@ -21,8 +23,8 @@ body .container .profile-card .card {
   max-width: 400px;
   margin: auto;
   text-align: center;
-  -webkit-box-shadow: 0 4px 8px 0;
-          box-shadow: 0 4px 8px 0;
+  -webkit-box-shadow: 0 4px 1px 0;
+          box-shadow: 0 4px 1px 0;
 }
 
 body .container .profile-card .card img {

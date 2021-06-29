@@ -1,4 +1,5 @@
 body {
+  box-sizing: border-box;
   background: #fff;
   .container {
     width: 80vw;
@@ -13,7 +14,7 @@ body {
         max-width: 400px;
         margin: auto;
         text-align: center;
-        box-shadow: 0 4px 8px 0;
+        box-shadow: 0 4px 1px 0;
 
         img {
           object-fit: cover;
