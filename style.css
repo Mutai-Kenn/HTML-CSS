@@ -20,7 +20,7 @@ body .container .profile-card {
 }
 
 body .container .profile-card .card {
-  max-width: 400px;
+  width: 400px;
   margin: auto;
   text-align: center;
   -webkit-box-shadow: 0 4px 1px 0;
@@ -34,7 +34,7 @@ body .container .profile-card .card img {
   height: 100%;
 }
 
-body .container .profile-card .card h1 {
+body .container .profile-card .card h2 {
   text-transform: capitalize;
   margin: 0.2rem;
   font-weight: 200;
@@ -53,7 +53,7 @@ body .container .profile-card .card .social-media {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 
 body .container .photo-card {
@@ -61,7 +61,9 @@ body .container .photo-card {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.3rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 body .container .photo-card .card {
@@ -91,5 +93,13 @@ body .container .photo-card .card .name p {
   padding-left: 1rem;
   margin: 0;
   line-height: 2.5;
+}
+
+body .container .picture picture img {
+  width: 100%;
+}
+
+body .container .figure figure img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
