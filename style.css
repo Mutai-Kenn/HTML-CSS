@@ -102,4 +102,38 @@ body .container .picture picture img {
 body .container .figure figure img {
   width: 100%;
 }
+
+@media screen and (max-width: 400px) {
+  body .container .profile-card,
+  body .container .photo-card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  body .container .profile-card .card,
+  body .container .photo-card .card {
+    width: 375px;
+    margin: auto;
+  }
+  body .container .figure {
+    width: 95vw;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .container .profile-card,
+  body .container .photo-card {
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+  }
+  body .container .profile-card .card,
+  body .container .photo-card .card {
+    width: 375px;
+    margin: auto;
+  }
+  body .container .figure {
+    width: 95vw;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */

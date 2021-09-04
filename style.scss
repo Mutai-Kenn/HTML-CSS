@@ -72,6 +72,7 @@ body {
         }
       }
     }
+    //Picture section
     .picture {
       picture {
         img {
@@ -79,11 +80,42 @@ body {
         }
       }
     }
+    //Figure section
     .figure {
       figure {
         img {
           width: 100%;
         }
+      }
+    }
+
+    //Media query Section
+    @media screen and (max-width: 400px) {
+      .profile-card,
+      .photo-card {
+        grid-template-columns: 1fr;
+        .card {
+          width: 375px;
+          margin: auto;
+        }
+      }
+      .figure {
+        width: 95vw;
+        margin: auto;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .profile-card,
+      .photo-card {
+        grid-template-columns: 2fr;
+        .card {
+          width: 375px;
+          margin: auto;
+        }
+      }
+      .figure {
+        width: 95vw;
+        margin: auto;
       }
     }
   }

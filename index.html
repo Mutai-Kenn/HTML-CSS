@@ -68,13 +68,17 @@
         </div>
     </div>
     </section>
-    <h1 class="heading">Picture Card</h1>
+    <h1 class="heading">Picture Element</h1>
     <section class="picture">
         <picture>
-            <img src="/img/photo-card2.jpg" alt="">
+            <source srcset="/img/photo-400.jpg 400w, 
+                            /img/photo-768.jpg 768w,
+                            /img/photo-1200.jpg 1200w "
+             >
+            <img src="/img/photo-400.jpg" alt="Dried tree in the desert">
         </picture>
     </section>
-    <h1 class="heading">Figure Image</h1>
+    <h1 class="heading">Figure Image Element</h1>
     <section class="figure">
         <figure>
             <img src="/img/photo-card3.jpg" alt="A sea with landscape" >
