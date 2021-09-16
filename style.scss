@@ -13,8 +13,7 @@ body {
       column-gap: 1rem;
       row-gap: 1.5rem;
       .card {
-        width: 400px;
-        margin: auto;
+        height: max-content;
         text-align: center;
         box-shadow: 0 4px 1px 0;
 
@@ -48,10 +47,8 @@ body {
       column-gap: 1rem;
       row-gap: 1rem;
       .card {
-        width: 400px;
         position: relative;
         margin-bottom: 0.5rem;
-
         img {
           width: 100%;
           height: auto;
@@ -97,7 +94,6 @@ body {
       .photo-card {
         grid-template-columns: 1fr;
         .card {
-          width: 375px;
           margin: auto;
         }
       }
@@ -113,7 +109,18 @@ body {
       .photo-card {
         grid-template-columns: repeat(2, 1fr);
         .card {
-          width: 375px;
+          margin: auto;
+        }
+      }
+      figure {
+        margin: 0;
+      }
+    }
+    @media screen and(min-width: 769px) and(max-width: 1200px) {
+      .profile-card,
+      .photo-card {
+        grid-template-columns: repeat(3, 1fr);
+        .card {
           margin: auto;
         }
       }

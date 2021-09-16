@@ -23,8 +23,9 @@ body .container .profile-card {
 }
 
 body .container .profile-card .card {
-  width: 400px;
-  margin: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   text-align: center;
   -webkit-box-shadow: 0 4px 1px 0;
           box-shadow: 0 4px 1px 0;
@@ -73,7 +74,6 @@ body .container .photo-card {
 }
 
 body .container .photo-card .card {
-  width: 400px;
   position: relative;
   margin-bottom: 0.5rem;
 }
@@ -117,7 +117,6 @@ body .container .figure figure img {
   }
   body .container .profile-card .card,
   body .container .photo-card .card {
-    width: 375px;
     margin: auto;
   }
   body .container .heading {
@@ -136,7 +135,21 @@ body .container .figure figure img {
   }
   body .container .profile-card .card,
   body .container .photo-card .card {
-    width: 375px;
+    margin: auto;
+  }
+  body .container figure {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  body .container .profile-card,
+  body .container .photo-card {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  body .container .profile-card .card,
+  body .container .photo-card .card {
     margin: auto;
   }
   body .container figure {

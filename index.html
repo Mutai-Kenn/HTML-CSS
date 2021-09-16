@@ -74,9 +74,10 @@
     <h1 class="heading">Picture Element</h1>
     <section class="picture">
         <picture>
-            <source srcset="/img/photo-768.jpg 768w,
-                            /img/photo-1200.jpg 1200w ">
-            <img src="/img/photo-400.jpg" alt="Dried tree in the desert">
+            <source srcset="/img/photo-400.jpg" media="(max-width:400px)">
+            <source srcset="/img/photo-768.jpg" media="(max-width:768px)">
+            <source srcset="/img/photo-1200.jpg" media="(max-width:1200px)">
+            <img src="/img/photo-card4.jpg" alt="Dried tree in the desert">
         </picture>
     </section>
     <!--Figure Element Section -->
